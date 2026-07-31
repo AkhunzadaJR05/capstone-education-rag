@@ -1,11 +1,15 @@
+import os
+os.environ["PATH"] += os.pathsep + r"C:\ffmpeg\bin"
+
 import subprocess
 import tempfile
-import os
 
 from services.ingestion.audio_extractor import get_whisper_model
 
 
 def extract_video(file_path: str) -> list[str]:
+    file_path = os.path.abspath(file_path)
+
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
         audio_path = tmp.name
 
