@@ -1,0 +1,16 @@
+- Quantum Bell State and Algorithms related to Bell State
+- Quantum Bell State: In the previous session you have already worked with the quantum gates, superposition, and entanglement.
+- When you learn Bell State only then you can learn superdense cooling and teleportation, and then you can move to Deutsch-Jozsa
+- Two qubits are entangled in nature. It means that the measurement of one qubit will affect other either positively or negatively. E.g; tossing two coins together, if they are entangled I will directly know the value of the other coin to be the same as that of the first one. I just have to check only one coin. Without observing other value, I know the value of other qubit.
+- If these two qubits are heavily or maximally entangled in nature, they can only give four possible outputs.
+- When dealing with the phi states you get the answer of one qubit same as that of other. This is the first type of entanglement.
+- When two qubits are entangled opposite in nature, the value of one qubit will be opposite to the other and we will have two opposite answers. That is the second type of entanglement called the negative entanglement.
+- North and South Pole will act as state 1 and 0, qubit will be like a spear in it. East and West will be plus and minus
+- Other directions north-west, south-east etc are actually superposition states. Superposition is a qubit existing in multiple positions simultaneously.
+- Block Sphere: https://quantum.cloud.ibm.com/learning/en/courses/general-formulation-of-quantum-information/density-matrices/bloch-sphere
+- (|00> + |11>)/under root 2 means that the qubit is in the superposition state.
+- How to create Bell Circuit? We have two qubits. 
+- Superdense coding: In superdense coding we can transmit two bit of information by using a single qubit. By this mean we use this analogy. 
+I want to send someone any two bits of information. For sending this physically we must have two bits in our laptop for sending. By using superdense coding we use only one qubit to send two bit of information. It work in the 2 raise to the power of n. 
+- Bell measurement is the opposite of Bell Circuit.
+- If we have high data rate we will have more internet, but it will require more bits. Time is increased. So, in that place we use qubits. Entanglement is used for safer communication. 
