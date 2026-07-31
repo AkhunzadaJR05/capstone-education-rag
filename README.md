@@ -34,9 +34,11 @@ PDF · DOCX · CSV · Markdown · TXT · PPTX · Images (PNG/JPG) · Audio (MP3/
 
 Create a `.env` file in the project root with the following:
 
+​```
 SECRET_KEY=your-random-secret-key
 DATABASE_URL=sqlite:///./app.db
-GROQ_API_KEY=your-groq-api-ke
+GROQ_API_KEY=your-groq-api-key
+​```
 
 `SECRET_KEY` can be any random string (used to sign JWTs). `GROQ_API_KEY` is required for chat responses to work — get a free key at console.groq.com. Never commit your real `.env` file; it is already excluded via `.gitignore`.
 
@@ -83,16 +85,18 @@ The backend runs at `http://127.0.0.1:8000` (interactive API docs at `/docs`). T
 
 ## Project Structure
 
-├── main.py # FastAPI app entry point
-├── streamlit_app.py # Streamlit frontend
-├── routers/ # API route handlers (auth, rooms, upload, chat)
-├── db/ # SQLAlchemy models and database setup
-├── services/ # Auth, embeddings, RAG logic, vector store
-│ └── ingestion/ # Per-file-type extractors
-├── alembic/ # Database migrations
-├── demo/ # Sample files, one per supported type
+​```
+├── main.py                  # FastAPI app entry point
+├── streamlit_app.py         # Streamlit frontend
+├── routers/                 # API route handlers (auth, rooms, upload, chat)
+├── db/                      # SQLAlchemy models and database setup
+├── services/                # Auth, embeddings, RAG logic, vector store
+│   └── ingestion/           # Per-file-type extractors
+├── alembic/                 # Database migrations
+├── demo/                    # Sample files, one per supported type
 └── docs/
-└── architecture.png # Approved system architecture diagram
+    └── architecture.png     # Approved system architecture diagram
+​```
 
 ## Architecture
 
